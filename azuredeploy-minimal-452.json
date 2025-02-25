@@ -35,44 +35,6 @@
                 "description": "(App Gateway https termination only) Name of the Azure Key Vault secret that's stored in the previously specified Key Vault as a PFX certificate (with no password) for your site's SSL cert. This secret must be pre-populated in the specified Key Vault with the matching name."
             },
             "type": "string"
-        },
-        "appGwSkuName": {
-            "defaultValue": "Standard_v2",
-            "allowedValues": [
-                "Standard_Small",
-                "Standard_Medium",
-                "Standard_Large",
-                "Standard_v2",
-                "WAF_Medium",
-                "WAF_Large",
-                "WAF_v2"
-            ],
-            "metadata": {
-                "description": "(App Gateway https termination only) Name of the Applicate Gateway SKU"
-            },
-            "type": "string"
-        },
-        "appGwSkuTier": {
-            "defaultValue": "Standard_v2",
-            "allowedValues": [
-                "Standard",
-                "Standard_v2",
-                "WAF",
-                "WAF_v2"
-            ],
-            "metadata": {
-                "description": "(App Gateway https termination only) Tier of the Applicate Gateway"
-            },
-            "type": "string"
-        },
-        "appGwSkuCapacity": {
-            "defaultValue": 2,
-            "maxValue": 10,
-            "minValue": 2,
-            "metadata": {
-                "description": "(App Gateway https termination only) Capacity instance count) of the Applicate Gateway"
-            },
-            "type": "int"
         }
     },
     "resources": [
